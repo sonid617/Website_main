@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dishank Soni — Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@300..800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400..700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grain" aria-hidden="true"></div>
+  <div class="progress" id="progress"></div>
+
+  <!-- ============ TOPBAR ============ -->
+  <header class="topbar" id="topbar">
+    <a href="#top" class="brand">
+      <span class="mark">DS</span>
+      Dishank Soni
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about" data-nav>About</a>
+      <a href="#focus" data-nav>Focus</a>
+      <a href="#work" data-nav>Work</a>
+      <a href="#resume" data-nav data-comment-anchor="93f2a622e8-a">Resume</a>
+      <a href="#writing" data-nav>Writing</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-screen-label="Hero">
+      <span class="hero-status reveal" data-rv="scale"><span class="dot"></span> ECE Graduate · Drone &amp; Embedded Engineer</span>
+      <h1 class="reveal" data-rv="scale" data-d="1">Hardware,<br>meet <span class="accentword">intelligence</span>.</h1>
+      <p class="hero-lead reveal" data-d="2">I'm Dishank Soni — a B.Tech ECE graduate building real-world drone communication, embedded, and AI systems from the ground up.</p>
+      <p class="typed-line reveal" data-d="2"><span class="label">~ currently building</span> <span class="typed-word" id="typed"></span><span class="caret"></span></p>
+      <div class="btn-row reveal" data-d="3">
+        <a href="#work" class="btn btn--solid">View work <ion-icon name="arrow-down-outline"></ion-icon></a>
+        <a href="#contact" class="btn btn--ghost">Get in touch <ion-icon name="mail-outline"></ion-icon></a>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="scroll-cue-line"></span>
+      </div>
+    </section>
+
+    <!-- ============ SCROLL STAGE (Apple-style scrubbed 3D drone) ============ -->
+    <section class="scrollstage" id="reveal" data-screen-label="Reveal">
+      <div class="ss-sticky">
+        <canvas id="ss-canvas" aria-hidden="true"></canvas>
+        <div class="ss-scrim" aria-hidden="true"></div>
+        <div class="ss-rail" aria-hidden="true"><span class="ss-rail-fill"></span></div>
+
+        <div class="ss-cap" data-from="0.02" data-to="0.22">
+          <span class="ss-kicker">The work</span>
+          <h2>Built to fly.</h2>
+          <p>Every system I build starts as scattered parts — and comes together as one machine.</p>
+        </div>
+        <div class="ss-cap" data-from="0.26" data-to="0.45">
+          <span class="ss-kicker">Over the air</span>
+          <h2>Drone comms,<br>end to end.</h2>
+          <p>Live video, telemetry, and control — streamed from the sky on OpenHD, WFB-NG &amp; MAVLink.</p>
+        </div>
+        <div class="ss-cap" data-from="0.49" data-to="0.69">
+          <span class="ss-kicker">Engineered</span>
+          <h2>Every component,<br>in its place.</h2>
+          <p>From RF links to flight controllers — I work down to the hardware, not just the surface.</p>
+        </div>
+        <div class="ss-cap" data-from="0.74" data-to="0.97">
+          <span class="ss-kicker">At the edge</span>
+          <h2>Hardware,<br>meet intelligence.</h2>
+          <p>Where embedded systems start to sense, decide, and act on their own.</p>
+        </div>
+
+        <div class="ss-hint" aria-hidden="true">
+          <span>Drag the drone · scroll</span>
+          <span class="ss-hint-line"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee">
+        <span>OpenHD</span><span>WFB-NG</span><span>MAVLink</span><span>batman-adv</span><span>ArduPilot</span><span>Raspberry Pi</span><span>Qt6 / C++</span><span>TensorFlow</span>
+        <span>OpenHD</span><span>WFB-NG</span><span>MAVLink</span><span>batman-adv</span><span>ArduPilot</span><span>Raspberry Pi</span><span>Qt6 / C++</span><span>TensorFlow</span>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" data-screen-label="About">
+      <div class="wrap">
+        <div class="opener">
+          <span class="kicker reveal">Chapter 02 · About</span>
+          <h2 class="reveal" data-rv="scale" data-d="1">Hello,<br>I'm Dishank.</h2>
+          <p class="lead reveal" data-d="2" data-comment-anchor="545866757a-p">A final-year ECE graduate from PDEU, Ahmedabad — where hardware meets intelligence.</p>
+        </div>
+        <p class="about-statement reveal" data-comment-anchor="3ebd3b17cd-p">I specialise in <span>drone communication</span>, embedded engineering, RF &amp; mesh networking, network security, and AI/ML — <span class="muted">building real systems from the ground up.</span></p>
+        <dl class="about-facts reveal" data-d="1">
+          <div class="fact"><dt>Education</dt><dd>B.Tech ECE @ PDEU</dd></div>
+          <div class="fact"><dt>Based in</dt><dd>Ahmedabad, India</dd></div>
+          <div class="fact" data-comment-anchor="0ed1cfe362-div"><dt>Currently</dt><dd>Intern @ Abhyuday</dd></div>
+          <div class="fact"><dt>Focus</dt><dd>Drones · Embedded</dd></div>
+          <div class="fact"><dt>Graduating</dt><dd>May 2026</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ FOCUS ============ -->
+    <section class="section bg-grey" id="focus" data-screen-label="Focus">
+      <div class="wrap">
+        <div class="opener">
+          <span class="kicker reveal">Chapter 03 · Craft</span>
+          <h2 class="reveal" data-rv="scale" data-d="1">Where I spend<br>my curiosity.</h2>
+          <p class="lead reveal" data-d="2">A handful of areas I keep coming back to.</p>
+        </div>
+
+        <article class="feature">
+          <div class="ftxt reveal">
+            <span class="fidx">01</span>
+            <h3>Drone Communication Systems</h3>
+            <p>Designing and deploying video transmission, telemetry, and mesh networking stacks for UAV platforms using OpenHD, WFB-NG, and MAVLink.</p>
+          </div>
+          <div class="fvis reveal" data-d="1"><ion-icon name="radio-outline"></ion-icon></div>
+        </article>
+        <article class="feature">
+          <div class="ftxt reveal">
+            <span class="fidx">02</span>
+            <h3>AI / ML Engineering</h3>
+            <p>Building real-world AI pipelines — from phishing detection models and character-level CNNs to real-time sentiment analysis with Flask and Chrome extensions.</p>
+          </div>
+          <div class="fvis reveal" data-d="1"><ion-icon name="git-network-outline"></ion-icon></div>
+        </article>
+        <article class="feature">
+          <div class="ftxt reveal">
+            <span class="fidx">03</span>
+            <h3>Embedded &amp; RF Systems</h3>
+            <p>Low-level embedded development on Raspberry Pi and custom hardware — RF link design, GStreamer pipelines, ArduPilot integration, and SDR experimentation.</p>
+          </div>
+          <div class="fvis reveal" data-d="1"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+        </article>
+        <article class="feature">
+          <div class="ftxt reveal">
+            <span class="fidx">04</span>
+            <h3>Home Lab &amp; DevOps</h3>
+            <p>Running a self-hosted home lab on Raspberry Pi 4 with Docker, Pi-hole, Tailscale, and Node-RED — with plans to expand into Proxmox for full virtualisation.</p>
+          </div>
+          <div class="fvis reveal" data-d="1"><ion-icon name="server-outline"></ion-icon></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work" data-screen-label="Work">
+      <div class="wrap-wide">
+        <div class="opener">
+          <span class="kicker reveal">Chapter 04 · Work</span>
+          <h2 class="reveal" data-rv="scale" data-d="1">Things I've<br>shipped.</h2>
+          <p class="lead reveal" data-d="2">Real, running systems — drone comms, embedded IoT, and self-hosted infrastructure.</p>
+        </div>
+        <div class="filter-bar reveal">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="Drone Systems">Drone Systems</button>
+          <button data-filter="Embedded &amp; IoT">Embedded &amp; IoT</button>
+          <button data-filter="Networking">Networking</button>
+        </div>
+        <div class="work-list">
+          <a href="#" class="work-card reveal" data-cat="Drone Systems">
+            <div class="work-shot" data-parallax><div class="work-chrome"><i></i><i></i><i></i></div><div class="work-shot-img"><img src="./assets/images/vtx.png" alt="Abhyuday VTX air and ground node hardware" /></div></div>
+            <div class="work-meta">
+              <span class="work-cat">Drone Systems</span>
+              <h3 class="work-title">Abhyuday VTX System</h3>
+              <p class="work-desc">Low-latency digital video transmission for UAVs, built on OpenHD &amp; WFB-NG with custom air and ground nodes.</p>
+              <span class="work-link">Explore the build <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal" data-cat="Drone Systems">
+            <div class="work-shot" data-parallax><div class="work-chrome"><i></i><i></i><i></i></div><div class="work-shot-img"><img src="./assets/images/gcs.png" alt="Abhyuday ground control station map view" /></div></div>
+            <div class="work-meta">
+              <span class="work-cat">Drone Systems</span>
+              <h3 class="work-title">Abhyuday GCS</h3>
+              <p class="work-desc">A Qt6 / C++ ground control station for live mission planning, telemetry, and swarm command over MAVLink.</p>
+              <span class="work-link">Explore the build <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal" data-cat="Embedded &amp; IoT">
+            <div class="work-shot" data-parallax><div class="work-chrome"><i></i><i></i><i></i></div><div class="work-shot-img"><img src="./assets/images/doorlock.png" alt="IoT face recognition smart door lock" /></div></div>
+            <div class="work-meta">
+              <span class="work-cat">Embedded &amp; IoT</span>
+              <h3 class="work-title">Face Recognition<br>Smart Door Lock</h3>
+              <p class="work-desc">An IoT access system on Raspberry Pi — Pi Camera face recognition with Firebase-backed logging and remote unlock.</p>
+              <span class="work-link">Explore the build <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal" data-cat="Embedded &amp; IoT">
+            <div class="work-shot" data-parallax><div class="work-chrome"><i></i><i></i><i></i></div><div class="work-shot-img"><img src="./assets/images/rover.png" alt="Autonomous object detection rover" /></div></div>
+            <div class="work-meta">
+              <span class="work-cat">Embedded &amp; IoT</span>
+              <h3 class="work-title">Autonomous<br>Detection Rover</h3>
+              <p class="work-desc">A self-driving rover running onboard AI inference for live object detection, with real-time telemetry streaming.</p>
+              <span class="work-link">Explore the build <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+          <a href="#" class="work-card reveal" data-cat="Networking">
+            <div class="work-shot" data-parallax><div class="work-chrome"><i></i><i></i><i></i></div><div class="work-shot-img"><img src="./assets/images/homelab.png" alt="Self-hosted Raspberry Pi home lab" /></div></div>
+            <div class="work-meta">
+              <span class="work-cat">Networking</span>
+              <h3 class="work-title">Self-Hosted<br>Home Lab</h3>
+              <p class="work-desc">A Raspberry Pi infrastructure stack — Docker, Pi-hole, Tailscale, and Node-RED — running private services 24/7.</p>
+              <span class="work-link">Explore the build <ion-icon name="arrow-forward-outline"></ion-icon></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME / SKILLS ============ -->
+    <section class="section bg-grey" id="resume" data-screen-label="Resume">
+      <div class="wrap">
+        <div class="opener">
+          <span class="kicker reveal">Chapter 05 · Path</span>
+          <h2 class="reveal" data-rv="scale" data-d="1">Skills &amp; the<br>path here.</h2>
+          <p class="lead reveal" data-d="2">What I'm fluent in, and how I got here.</p>
+          <a href="./assets/Dishank-Soni-CV.pdf" download="Dishank-Soni-CV.pdf" class="btn btn--solid btn--sm reveal" data-d="3" style="justify-self:center"><ion-icon name="download-outline"></ion-icon> Download CV</a>
+        </div>
+        <div class="sr-grid">
+          <div class="skills-col reveal">
+            <h3 class="col-head">Skills</h3>
+            <div class="skill" data-pct="90"><div class="skill-top"><span class="skill-name">Drone Comms (OpenHD, WFB-NG, MAVLink)</span><span class="skill-pct" data-count="90">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="85"><div class="skill-top"><span class="skill-name">Embedded Systems (RPi, ArduPilot)</span><span class="skill-pct" data-count="85">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="85"><div class="skill-top"><span class="skill-name">Linux &amp; Bash</span><span class="skill-pct" data-count="85">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="80"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct" data-count="80">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="80"><div class="skill-top"><span class="skill-name">Mesh Networking (batman-adv, OpenWRT)</span><span class="skill-pct" data-count="80">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="75"><div class="skill-top"><span class="skill-name">RF &amp; Signal Processing</span><span class="skill-pct" data-count="75">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="75"><div class="skill-top"><span class="skill-name">Cybersecurity &amp; Network Analysis</span><span class="skill-pct" data-count="75">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="70"><div class="skill-top"><span class="skill-name">AI / ML (TensorFlow, CNN, NLP)</span><span class="skill-pct" data-count="70">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="70"><div class="skill-top"><span class="skill-name">C++ / Qt6</span><span class="skill-pct" data-count="70">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+            <div class="skill" data-pct="65"><div class="skill-top"><span class="skill-name">Docker &amp; DevOps</span><span class="skill-pct" data-count="65">0%</span></div><div class="skill-bar"><div class="skill-fill"></div></div></div>
+          </div>
+          <div class="edu-col reveal" data-d="1">
+            <h3 class="col-head">Experience &amp; education</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <span class="tl-when" data-comment-anchor="1d18fef9d7-span">2026 — present · Internship</span>
+                <div class="tl-title">Abhyuday</div>
+                <p class="tl-sub">Firmware &amp; Hardware Intern</p>
+                <p class="tl-desc">Built VTX video transmission (OpenHD / WFB-NG), a Qt6/C++ swarm GCS, a React Native drone controller app, Abhyuday OS (a 3-image Debian Bookworm ecosystem), MAVLink telemetry pipelines, and batman-adv mesh networking for drone swarms. Mentored by Dr. Rohit Kumar Singh and Rama Kumarappa.</p>
+              </div>
+              <div class="tl-item">
+                <span class="tl-when">2022 — May 2026</span>
+                <div class="tl-title">Pandit Deendayal Energy University (PDEU)</div>
+                <p class="tl-sub">B.Tech — Electronics &amp; Communication Engineering</p>
+                <p class="tl-desc">Specialisation in RF systems, embedded hardware, drone communication, and AI/ML. Final-year project on a multi-system drone communication ecosystem at Abhyuday.</p>
+              </div>
+              <div class="tl-item"><span class="tl-when">2018 — 2022</span><div class="tl-title">Allen Academy of Science</div></div>
+              <div class="tl-item"><span class="tl-when">2009 — 2018</span><div class="tl-title">Stephen's High School</div></div>
+            </div>
+
+            <h3 class="col-head" style="margin-top:48px">Certifications</h3>
+            <div class="timeline">
+              <div class="tl-item"><span class="tl-when">Jul 2025 · Udemy</span><div class="tl-title">Wireshark for Network Analysis</div></div>
+              <div class="tl-item"><span class="tl-when">Jan – Apr 2025 · NPTEL</span><div class="tl-title">Cloud Computing</div></div>
+              <div class="tl-item"><span class="tl-when">Jul 2025 · NPTEL</span><div class="tl-title">Signal Processing for Communication</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section class="section" id="writing" data-screen-label="Writing">
+      <div class="wrap">
+        <div class="opener">
+          <span class="kicker reveal">Chapter 06 · Words</span>
+          <h2 class="reveal" data-rv="scale" data-d="1">From the<br>blog.</h2>
+          <p class="lead reveal" data-d="2">Notes on security, privacy, and the human side of the systems we build.</p>
+        </div>
+        <a href="https://dishanksoni627.wordpress.com/" target="_blank" rel="noopener" class="writing-card reveal">
+          <div class="writing-img"><img src="./assets/images/blog-2.jpg" alt="Cybersecurity and the human element" /></div>
+          <div class="writing-body" data-comment-anchor="48497f2365-div">
+            <div class="writing-meta"><span class="pill">Cybersecurity</span><span class="dot"></span><span>Apr 27, 2024</span></div>
+            <h3 class="writing-title">Safeguarding against cyber risks: the human element in cybersecurity</h3>
+            <p class="writing-excerpt">Social engineering exploits the human element to gain access to sensitive information. Understanding the psychology behind these attacks is crucial for anyone looking to protect themselves against cyber risk.</p>
+            <span class="work-link">Read the post <ion-icon name="arrow-forward-outline"></ion-icon></span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section bg-grey" id="contact" data-screen-label="Contact">
+      <div class="wrap">
+        <div class="opener contact-hero">
+          <span class="kicker reveal">Chapter 07 · Contact</span>
+          <h2 class="contact-big reveal" data-rv="scale" data-d="1">Let's build<br>something.</h2>
+          <a href="mailto:sonidishank552@gmail.com" class="contact-email reveal" data-d="2">sonidishank552@gmail.com</a>
+        </div>
+        <dl class="contact-rows reveal">
+          <div class="crow"><ion-icon name="call-outline"></ion-icon><span class="ck">Phone</span><span class="cv">+91 92652 62623</span></div>
+          <div class="crow"><ion-icon name="location-outline"></ion-icon><span class="ck">Location</span><span class="cv">Ahmedabad, Gujarat, India</span></div>
+          <div class="crow"><ion-icon name="time-outline"></ion-icon><span class="ck">Status</span><span class="cv">Open to 2026 roles</span></div>
+        </dl>
+        <div class="socials reveal" data-d="1">
+          <a href="https://github.com/sonid617" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/dishanksoni" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="https://www.instagram.com/dishank557" target="_blank" rel="noopener" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        </div>
+        <form class="form reveal" data-d="1" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="fn">Full name</label><input id="fn" name="fullname" type="text" placeholder="Jane Doe" required /></div>
+            <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" placeholder="jane@email.com" required /></div>
+          </div>
+          <div class="field"><label for="msg">Message</label><textarea id="msg" name="message" rows="5" placeholder="Tell me about it…" required></textarea></div>
+          <button class="btn btn--solid" type="submit" id="sendBtn" disabled><ion-icon name="paper-plane-outline"></ion-icon> Send message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="map-embed reveal">
+          <iframe title="Ahmedabad map" loading="lazy" src="https://maps.google.com/maps?width=100%25&height=600&hl=en&q=Ahmedabad&t=&z=11&ie=UTF8&iwloc=B&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer wrap">
+    <div class="footer-grid">
+      <a href="#top" class="brand"><span class="mark">DS</span> Dishank Soni</a>
+      <small>© 2026 Dishank Soni — Built with care in Ahmedabad.</small>
+      <a href="#top" class="to-top">Back to top <ion-icon name="arrow-up-outline"></ion-icon></a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/scrollstage.js"></script>
+  <script src="./assets/js/story.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- ============ TWEAKS PANEL ============ -->
+  <div id="tweaks-root"></div>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "accent": "#ff5a1f",
+      "displayFont": "Bricolage Grotesque",
+      "scrollMotion": true,
+      "grain": true
+    }/*EDITMODE-END*/;
+
+    function TweaksApp() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+      React.useEffect(() => {
+        document.documentElement.style.setProperty("--accent", t.accent);
+      }, [t.accent]);
+      React.useEffect(() => {
+        document.documentElement.style.setProperty("--font-display", `"${t.displayFont}", serif`);
+      }, [t.displayFont]);
+      React.useEffect(() => {
+        document.body.classList.toggle("no-motion", !t.scrollMotion);
+      }, [t.scrollMotion]);
+      React.useEffect(() => {
+        document.body.classList.toggle("no-grain", !t.grain);
+      }, [t.grain]);
+      return (
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Identity" />
+          <TweakColor label="Accent" value={t.accent}
+            options={["#ff5a1f", "#2b2bf2", "#19a06a", "#e5006d", "#1d1d1f"]}
+            onChange={(v) => setTweak("accent", v)} />
+          <TweakSelect label="Display font" value={t.displayFont}
+            options={["Bricolage Grotesque", "Space Grotesk", "Instrument Serif"]}
+            onChange={(v) => setTweak("displayFont", v)} />
+          <TweakSection label="Motion" />
+          <TweakToggle label="Scroll motion" value={t.scrollMotion}
+            onChange={(v) => setTweak("scrollMotion", v)} />
+          <TweakToggle label="Paper grain" value={t.grain}
+            onChange={(v) => setTweak("grain", v)} />
+        </TweaksPanel>
+      );
+    }
+    ReactDOM.createRoot(document.getElementById("tweaks-root")).render(<TweaksApp />);
+  </script>
+</body>
+</html>
